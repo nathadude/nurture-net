@@ -1,0 +1,10 @@
+{
+    "user_id": "abc123",
+    "taught_words": ["apple", "me", "like"],
+    "cooldowns": {
+      "next_teach_time": "2025-06-20T17:05:00Z"
+    },
+    "xp": 42,
+    "word_tiers_unlocked": 1
+  }
+  
