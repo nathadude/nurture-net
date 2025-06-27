@@ -1,5 +1,6 @@
 # nurture-net
- AI homunculus created by AI and Human
+# AI homunculus created by AI and Human
+## Roadmap/Tech Stack below
 
 # 🧠 Human Fool Architecture Overview
 
