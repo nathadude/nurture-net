@@ -1,7 +1,4 @@
-import { useState, useEffect } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState, useEffect } from "react";
 
 function App() {
   const [userId, setUserId] = useState("");
@@ -34,25 +31,27 @@ function App() {
     setVocab(data.allowed_words);
   };
 
-  useEffect(() => { createUser(); }, []);
+  useEffect(() => {
+    createUser();
+  }, []);
 
   return (
-    <div style={{ padding: '20px' }}>
-      <h1>Vocabulary Gating Test</h1>
+    <div style={{ padding: '2rem', fontFamily: 'sans-serif' }}>
+      <h1>👶 AI Language Baby</h1>
       <p><strong>User ID:</strong> {userId}</p>
 
-      <div style={{ marginBottom: '20px' }}>
+      <div style={{ marginTop: '1rem' }}>
         <input
           value={word}
           onChange={e => setWord(e.target.value)}
-          placeholder="Teach a new word"
+          placeholder="Teach it a word..."
         />
         <button onClick={teachWord}>Teach Word</button>
         <p>{message}</p>
       </div>
 
-      <div>
-        <h2>Learned Words</h2>
+      <div style={{ marginTop: '2rem' }}>
+        <h2>🧠 Vocabulary Learned:</h2>
         <ul>
           {vocab.map((w, i) => <li key={i}>{w}</li>)}
         </ul>
@@ -61,4 +60,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
